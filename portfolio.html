@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susmitha Mukkamala — AI Product Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f1e8;
+    --bg-soft: #f1e9dd;
+    --bg-card: #fbf6ec;
+    --ink: #2a2622;
+    --ink-soft: #5a544c;
+    --ink-muted: #8a8278;
+    --line: #e2d8c7;
+    --accent: #8b5a3c;
+    --highlight: #c4956b;
+    --quote-bg: #f1e9dd;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+  }
+
+  /* === HERO === */
+  .hero {
+    padding: 40px 0 96px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 96px;
+  }
+
+  .available {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 32px;
+    letter-spacing: 0.01em;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    background: #6b8e4e;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    color: var(--ink);
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .intro {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+
+  .links a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .links a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* === OPERATING PRINCIPLES === */
+  .principles {
+    margin-bottom: 96px;
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-muted);
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--ink);
+  }
+
+  .principles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 40px;
+    margin-top: 40px;
+  }
+
+  .principle {
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  .principle-num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 14px;
+    color: var(--accent);
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  .principle-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .principle-text {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+
+  /* === CASE STUDY === */
+  .case-study {
+    margin-bottom: 120px;
+    padding-bottom: 96px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .case-study:last-of-type {
+    border-bottom: none;
+  }
+
+  .case-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .case-meta-divider {
+    width: 4px;
+    height: 4px;
+    background: var(--ink-muted);
+    border-radius: 50%;
+  }
+
+  .case-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .case-subtitle {
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin-bottom: 48px;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .case-section {
+    margin-bottom: 40px;
+  }
+
+  .case-section-label {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .case-section p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  .case-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .case-section strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .case-section em {
+    color: var(--accent);
+    font-style: italic;
+  }
+
+  /* Quote callout */
+  .quote {
+    padding: 24px 28px;
+    background: var(--quote-bg);
+    border-left: 3px solid var(--accent);
+    margin: 24px 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .quote-attr {
+    display: block;
+    margin-top: 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    color: var(--ink-muted);
+    letter-spacing: 0.02em;
+  }
+
+  /* Framework / Decision list */
+  .framework {
+    background: var(--bg-card);
+    padding: 24px 28px;
+    border: 1px solid var(--line);
+    margin: 20px 0;
+  }
+
+  .framework-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .framework ol, .framework ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .framework li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--line);
+    line-height: 1.55;
+  }
+
+  .framework li:last-child { border-bottom: none; }
+
+  .framework li strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .framework ol {
+    counter-reset: step;
+  }
+
+  .framework ol li {
+    counter-increment: step;
+    padding-left: 36px;
+    position: relative;
+  }
+
+  .framework ol li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 14px;
+    width: 24px;
+  }
+
+  /* === CODE / PROMPT BLOCKS === */
+  .code-block {
+    background: #2a2622;
+    color: #f1e9dd;
+    padding: 20px 24px;
+    margin: 16px 0;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .code-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: var(--highlight);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .code-comment { color: #8a8278; font-style: italic; }
+  .code-key { color: #c4956b; }
+  .code-string { color: #d4b896; }
+
+  /* Prompt version comparison */
+  .prompt-version {
+    margin: 24px 0;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+  }
+
+  .prompt-version-header {
+    padding: 14px 20px;
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .prompt-version-tag {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--accent);
+  }
+
+  .prompt-version-tag.bad { color: #a85a5a; }
+  .prompt-version-tag.good { color: #6b8e4e; }
+
+  .prompt-version-note {
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .prompt-version-body {
+    padding: 18px 20px;
+    font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .prompt-version-why {
+    padding: 14px 20px;
+    border-top: 1px solid var(--line);
+    background: var(--bg);
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .prompt-version-why strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* Eval rubric table */
+  .rubric {
+    margin: 24px 0;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+  }
+
+  .rubric-row {
+    display: grid;
+    grid-template-columns: 180px 1fr 80px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .rubric-row:last-child { border-bottom: none; }
+
+  .rubric-row.header {
+    background: var(--bg-soft);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    font-weight: 600;
+  }
+
+  .rubric-criterion {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .rubric-detail {
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  .rubric-score {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 16px;
+    color: var(--accent);
+    text-align: right;
+  }
+
+  @media (max-width: 640px) {
+    .rubric-row { grid-template-columns: 1fr; gap: 4px; }
+    .rubric-score { text-align: left; }
+  }
+
+  .disclosure {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-style: italic;
+    padding: 12px 16px;
+    border-left: 2px solid var(--line);
+    margin: 16px 0;
+    line-height: 1.6;
+  }
+
+  /* Stats row */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 28px 0;
+    margin: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stat-number {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
+
+  /* Lessons / takeaways at end of case study */
+  .lessons {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+  }
+
+  .lessons h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .lesson {
+    margin-bottom: 20px;
+    padding-left: 24px;
+    position: relative;
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+
+  .lesson::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .lesson strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* === MORE WORK === */
+  .more-work {
+    margin-bottom: 96px;
+  }
+
+  .more-item {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .more-item:last-child { border-bottom: none; }
+
+  .more-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .more-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .more-meta {
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .more-desc {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+
+  /* === ABOUT === */
+  .about {
+    margin-bottom: 96px;
+  }
+
+  .about p {
+    font-size: 16px;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+
+  .about strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* === CONTACT === */
+  .contact {
+    padding-top: 80px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+  }
+
+  .contact-prompt {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 32px;
+    font-style: italic;
+    color: var(--ink);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .contact-sub {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+
+  .contact-email {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 2px;
+    margin-bottom: 24px;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--ink-muted);
+    flex-wrap: wrap;
+  }
+
+  .contact-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .contact-links a:hover { border-bottom-color: var(--accent); }
+
+  .footer {
+    margin-top: 64px;
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .container { padding: 48px 24px 80px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 26px; }
+    .case-title { font-size: 28px; }
+    .case-subtitle { font-size: 16px; }
+    .principles-grid { grid-template-columns: 1fr; gap: 24px; }
+    .stats { grid-template-columns: 1fr; gap: 20px; }
+    .stat-number { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="available">
+      <span class="dot"></span>
+      Open to AI Product Manager roles
+    </div>
+    <h1>I build AI products people <em>actually trust</em>.</h1>
+    <p class="intro">
+      I'm Susmitha — an AI Associate Product Manager at Vantedge AI (YC W22).
+      I work on the harder half of building with LLMs: not getting them to
+      generate output, but getting humans to act on it. This portfolio is the
+      thinking behind that work — the problems I went looking for, the
+      decisions I had to defend, and the things I'd do differently.
+    </p>
+    <div class="links">
+      <a href="#principles">How I work</a>
+      <a href="#case-1">Case studies</a>
+      <a href="mailto:susmitha.2003m@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/susmitha-mukkamala-b3314b204" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="principles" class="principles">
+    <div class="section-label">How I work</div>
+    <h2>Six things I do before writing a single PRD.</h2>
+    <p style="font-size: 16px; color: var(--ink-soft); line-height: 1.65; max-width: 620px;">
+      Most PM work goes wrong in the first 48 hours — when a problem is
+      handed off without enough context, or when a feature is scoped before
+      anyone's asked who it's actually for. These are the habits I've built
+      so I don't make those mistakes.
+    </p>
+
+    <div class="principles-grid">
+      <div class="principle">
+        <div class="principle-num">01</div>
+        <div class="principle-title">Find the friction before the feature.</div>
+        <div class="principle-text">
+          The best problems aren't in the backlog — they're in the workarounds
+          users have already built. I watch what people do, not what they say
+          they want.
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">02</div>
+        <div class="principle-title">Talk to ten users before guessing.</div>
+        <div class="principle-text">
+          User interviews aren't a phase — they're how I pressure-test every
+          hypothesis. Most of my best decisions came from a quiet contradiction
+          a user mentioned in passing.
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">03</div>
+        <div class="principle-title">Frameworks are tools, not theatre.</div>
+        <div class="principle-text">
+          I use RICE for prioritization, North Star + input metrics for
+          tracking, and Jobs-to-be-Done for scoping. But I'll throw any of
+          them out if the situation needs a different lens.
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">04</div>
+        <div class="principle-title">Ship the smallest honest version.</div>
+        <div class="principle-text">
+          I'd rather ship a 60% solution to ten real users this week than a
+          perfect one to no one next quarter. Real usage data beats every
+          internal debate.
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">05</div>
+        <div class="principle-title">Measure what you can defend.</div>
+        <div class="principle-text">
+          Every metric on my roadmap has a definition document behind it.
+          If I can't explain how it's calculated and what would make it move,
+          I don't put it on a dashboard.
+        </div>
+      </div>
+
+      <div class="principle">
+        <div class="principle-num">06</div>
+        <div class="principle-title">Write the post-mortem before launch.</div>
+        <div class="principle-text">
+          I write down what failure would look like and what we'd learn from
+          it — before shipping. It's the fastest way to surface assumptions
+          a team is making without realizing it.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY 1: VANTEDGE -->
+  <section id="case-1" class="case-study">
+    <div class="case-meta">
+      <span>Case Study 01</span>
+      <span class="case-meta-divider"></span>
+      <span>Vantedge AI · YC W22</span>
+      <span class="case-meta-divider"></span>
+      <span>2024 — Present</span>
+    </div>
+
+    <h2 class="case-title">The trust problem in AI document intelligence.</h2>
+    <p class="case-subtitle">
+      How we turned a model with >90% accuracy into a product enterprise
+      analysts actually used — by treating trust as a design problem, not a
+      model problem.
+    </p>
+
+    <div class="case-section">
+      <div class="case-section-label">The problem I was solving</div>
+      <p>
+        Vantedge is building AI workflows for enterprise document analysis —
+        the kind of work where a single analyst might spend two days on what
+        the model can finish in minutes. The technical achievement was real:
+        our extraction accuracy crossed 90% early. The product problem was
+        that <strong>none of that mattered if analysts didn't trust the output
+        enough to ship it.</strong>
+      </p>
+      <p>
+        When I started shadowing customer workflows, I kept seeing the same
+        pattern: users would run the AI extraction, get a clean structured
+        output, and then <em>redo the work manually</em> to verify it. We'd
+        shipped a time-saving product that wasn't saving any time.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I found the real friction</div>
+      <p>
+        I ran a round of 12 user interviews across our enterprise pilot
+        customers, plus screen-recorded workflow sessions with the three
+        heaviest users. I went in expecting to hear about model accuracy —
+        but the friction was somewhere else entirely.
+      </p>
+      <div class="quote">
+        "I believe the model is probably right. I just can't sign off on
+        something I haven't checked myself. If anything's wrong, it's my
+        name on the report."
+        <span class="quote-attr">— Senior analyst, pilot customer (paraphrased)</span>
+      </div>
+      <p>
+        The insight: accuracy wasn't the bottleneck. <strong>Verifiability
+        was.</strong> Our users weren't refusing to trust the AI — they
+        physically couldn't audit it without re-reading the source document
+        themselves. Every extraction was a black box that required manual
+        re-verification.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">The decisions I had to defend</div>
+      <p>
+        The team's instinct was to push for higher accuracy — keep iterating
+        the prompts, try fine-tuning, add a verification model on top. I
+        argued that <strong>more accuracy would not solve a trust
+        problem.</strong> Even at 99% accuracy, the analyst still needs to
+        sign their name. The product needed to make verification fast, not
+        chase a moving accuracy ceiling.
+      </p>
+      <p>
+        I scoped a different bet: invest in trust UX before investing in
+        model gains. Three specific moves, prioritized using RICE against
+        engineering effort and user interview signal:
+      </p>
+
+      <div class="framework">
+        <div class="framework-title">The trust-UX roadmap</div>
+        <ol>
+          <li><strong>Inline citations.</strong> Every extracted field links back to the exact paragraph in the source document. Users can verify in one click instead of re-reading.</li>
+          <li><strong>Confidence cues.</strong> Visual signals (color + score) on each extraction, so users know where to focus their attention. "Spot-check the yellow ones" became a real workflow.</li>
+          <li><strong>Edit affordances.</strong> One-click correction on any extracted value. Edits feed back into a labeled dataset that improves prompts on the next release.</li>
+        </ol>
+      </div>
+
+      <p>
+        I left explicit model improvements off the roadmap for that quarter.
+        It was the right call but I had to defend it to engineering twice —
+        once at planning, once mid-quarter when the velocity felt slow.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I measured if it worked</div>
+      <p>
+        The model evaluation framework I'd built earlier gave us the accuracy
+        signal. But for trust, I defined three new metrics that didn't exist
+        before:
+      </p>
+      <div class="framework">
+        <div class="framework-title">Trust-specific metrics</div>
+        <ul>
+          <li><strong>Time-to-verification</strong> — how long between extraction and user sign-off</li>
+          <li><strong>Citation click-through rate</strong> — proxy for "are users actually using the audit trail?"</li>
+          <li><strong>Edit rate per extraction</strong> — too low meant users weren't engaging; too high meant accuracy was the real problem</li>
+        </ul>
+      </div>
+      <p>
+        The combination mattered. High accuracy with low citation click-through
+        would mean users weren't verifying at all (dangerous). High click-through
+        with low edit rate would mean verification was easy <em>and</em> the
+        model was right. That's what we needed.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Under the hood: how the eval rubric actually worked</div>
+      <p>
+        Talking about "rubric-based scoring" is easy. The thing that made it
+        useful was the specificity — each criterion had to be defendable, and
+        each score had to map to a concrete failure mode an engineer could fix.
+        Here's a representative scoring rubric for a single extraction, the
+        kind we ran against every golden test case.
+      </p>
+
+      <div class="rubric">
+        <div class="rubric-row header">
+          <div>Criterion</div>
+          <div>What we check</div>
+          <div>Score</div>
+        </div>
+        <div class="rubric-row">
+          <div class="rubric-criterion">Accuracy</div>
+          <div class="rubric-detail">Does each extracted field match the ground-truth value? Partial credit for near-misses (e.g. rounded numbers, equivalent phrasings).</div>
+          <div class="rubric-score">0–3</div>
+        </div>
+        <div class="rubric-row">
+          <div class="rubric-criterion">Faithfulness</div>
+          <div class="rubric-detail">Is every claim in the output traceable to the source document? Any unsupported claim drops the score to 0.</div>
+          <div class="rubric-score">0–3</div>
+        </div>
+        <div class="rubric-row">
+          <div class="rubric-criterion">Citation correctness</div>
+          <div class="rubric-detail">Does the cited paragraph actually support the extracted claim? Wrong citations were worse than no citation.</div>
+          <div class="rubric-score">0–2</div>
+        </div>
+        <div class="rubric-row">
+          <div class="rubric-criterion">Completeness</div>
+          <div class="rubric-detail">Were all required fields extracted? Penalize silent omissions; an "I don't know" was acceptable, a missing field was not.</div>
+          <div class="rubric-score">0–2</div>
+        </div>
+        <div class="rubric-row">
+          <div class="rubric-criterion">Format adherence</div>
+          <div class="rubric-detail">Does the output match the schema we asked for? Strict — downstream code depended on it.</div>
+          <div class="rubric-score">0–1</div>
+        </div>
+      </div>
+
+      <p>
+        A passing extraction needed <strong>≥9/11 with no zeros on
+        Faithfulness or Citation correctness</strong>. The constraint mattered:
+        a model that scored highly on accuracy but fabricated citations was
+        worse than a model that scored lower but cited honestly. We'd rather
+        ship a humble model than a confident one.
+      </p>
+
+      <div class="code-block"><span class="code-comment"># Example: a single eval case run through the rubric</span>
+<span class="code-key">case_id</span>: <span class="code-string">"contract_termination_clause_017"</span>
+<span class="code-key">document_type</span>: <span class="code-string">"vendor_contract_pdf"</span>
+<span class="code-key">expected_field</span>: <span class="code-string">"termination_notice_period_days"</span>
+<span class="code-key">ground_truth</span>: <span class="code-string">90</span>
+
+<span class="code-key">model_output</span>: <span class="code-string">90</span>
+<span class="code-key">citation</span>: <span class="code-string">"Section 12.3, page 4: 'either party may terminate
+            with 90 days written notice...'"</span>
+
+<span class="code-key">scores</span>:
+  accuracy: <span class="code-string">3</span>    <span class="code-comment"># exact match</span>
+  faithfulness: <span class="code-string">3</span>    <span class="code-comment"># claim fully supported</span>
+  citation: <span class="code-string">2</span>    <span class="code-comment"># cited paragraph contains the claim</span>
+  completeness: <span class="code-string">2</span>    <span class="code-comment"># field present</span>
+  format: <span class="code-string">1</span>    <span class="code-comment"># integer as expected</span>
+<span class="code-key">total</span>: <span class="code-string">11 / 11</span>  →  <span class="code-comment">PASS</span>
+</div>
+
+      <p>
+        The framework ran on every model release across a golden set of ~150
+        cases spanning document types and edge categories (multilingual
+        clauses, OCR'd scans, tables, footnotes). We caught at least three
+        regressions pre-launch that would have shipped under a "vibes-based"
+        review.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Under the hood: a prompt that took four versions</div>
+      <p>
+        Our hardest extraction problem was pulling structured data from
+        long, unstructured contracts — 40–80 pages of dense legal prose
+        with information scattered across sections, footnotes, and amendment
+        appendices. The first prompt we shipped looked reasonable. It was
+        wrong in three different ways before we got it right.
+      </p>
+
+      <div class="disclosure">
+        The prompts below are representative patterns based on the kind of
+        iteration we did at Vantedge. Exact production prompts are
+        proprietary; what's shown here is the structure and reasoning behind
+        the changes.
+      </div>
+
+      <div class="prompt-version">
+        <div class="prompt-version-header">
+          <span class="prompt-version-tag bad">v1 — what we shipped first</span>
+          <span class="prompt-version-note">Failed on long docs</span>
+        </div>
+        <div class="prompt-version-body">Extract the key contract terms from the document below.
+
+Return the result as JSON with these fields:
+- parties
+- effective_date
+- termination_notice_period_days
+- governing_law
+- payment_terms
+
+Document:
+{{document_text}}</div>
+        <div class="prompt-version-why">
+          <strong>What went wrong:</strong> On short documents this worked
+          fine. On 60-page contracts, the model would invent plausible-sounding
+          values when it couldn't find the real ones — a 30-day termination
+          notice that didn't exist anywhere in the contract, governing law
+          guessed from the company's headquarters. <em>Faithfulness
+          collapsed.</em>
+        </div>
+      </div>
+
+      <div class="prompt-version">
+        <div class="prompt-version-header">
+          <span class="prompt-version-tag">v2 — added "I don't know"</span>
+          <span class="prompt-version-note">Reduced hallucinations, but format broke</span>
+        </div>
+        <div class="prompt-version-body">Extract the key contract terms from the document below.
+
+For each field, return:
+- the extracted value, OR
+- "NOT_FOUND" if the field is not explicitly stated in the document.
+
+DO NOT infer or guess. If unsure, return "NOT_FOUND".
+
+Fields: parties, effective_date, termination_notice_period_days,
+governing_law, payment_terms
+
+Document:
+{{document_text}}</div>
+        <div class="prompt-version-why">
+          <strong>What got better:</strong> Hallucinations dropped sharply
+          — the model started returning "NOT_FOUND" instead of inventing.
+          <strong>What got worse:</strong> The model started returning
+          inconsistent JSON, sometimes wrapping NOT_FOUND in quotes, sometimes
+          not. Downstream parsing broke. We'd traded one bug for another.
+        </div>
+      </div>
+
+      <div class="prompt-version">
+        <div class="prompt-version-header">
+          <span class="prompt-version-tag">v3 — enforced schema + reasoning</span>
+          <span class="prompt-version-note">Better, but slow on long docs</span>
+        </div>
+        <div class="prompt-version-body">You are extracting structured data from a legal contract.
+
+Follow this process for each field:
+1. Search the document for the relevant clause.
+2. If found, quote the exact source text supporting your answer.
+3. Extract the value. If not found, set value to null.
+4. Return the result in the JSON schema below.
+
+Schema:
+{
+  "parties": { "value": string | null, "source_quote": string | null },
+  "termination_notice_period_days": { "value": int | null, "source_quote": string | null },
+  ...
+}
+
+Document:
+{{document_text}}</div>
+        <div class="prompt-version-why">
+          <strong>What got better:</strong> Forcing the model to quote its
+          source before answering improved faithfulness dramatically — the
+          act of finding the quote was the verification step. JSON schema
+          was strict, parsing was clean. <strong>What was still wrong:</strong>
+          On 60+ page documents, the model would still miss clauses buried
+          in amendments at the end. The chain-of-thought helped, but the
+          model wasn't searching exhaustively.
+        </div>
+      </div>
+
+      <div class="prompt-version">
+        <div class="prompt-version-header">
+          <span class="prompt-version-tag good">v4 — sectioned retrieval + few-shot</span>
+          <span class="prompt-version-note">Shipped to production</span>
+        </div>
+        <div class="prompt-version-body">You are extracting structured data from a legal contract.
+
+The document has been split into sections (Main Agreement,
+Schedules, Amendments). Review ALL sections before answering.
+
+For each field below, follow this process:
+1. List every section that may contain relevant information.
+2. Quote the exact text supporting your answer (from any section).
+3. If multiple sections mention the same field (e.g. amendment
+   overrides main agreement), use the latest in force.
+4. If not found in any section, set value to null.
+
+Here are two worked examples of correct extraction:
+{{few_shot_example_1}}
+{{few_shot_example_2}}
+
+Schema:
+{ ... }
+
+Document sections:
+{{sectioned_document}}</div>
+        <div class="prompt-version-why">
+          <strong>What worked:</strong> Three changes together. First, we
+          chunked documents by section before passing them in — so the model
+          knew the structure. Second, we added two few-shot examples covering
+          the hardest cases (a clause in an amendment overriding the main
+          agreement, and a field genuinely not present). Third, we made the
+          "amendments override" rule explicit, which was a real source of
+          errors. Faithfulness scores stabilized above the threshold and
+          accuracy on long-document cases jumped meaningfully.
+        </div>
+      </div>
+
+      <p>
+        The lesson I carried out of this: <strong>most prompt failures aren't
+        prompt problems — they're missing context.</strong> v1 wasn't a bad
+        prompt; it just didn't tell the model how the documents were
+        structured. v4 worked because we did the work upfront to give the
+        model what it needed before asking it to be clever.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Outcomes</div>
+      <div class="stats">
+        <div>
+          <div class="stat-number">~1 hour</div>
+          <div class="stat-label">Analyst turnaround,<br>down from 2 days</div>
+        </div>
+        <div>
+          <div class="stat-number">&gt;90%</div>
+          <div class="stat-label">Sustained<br>extraction accuracy</div>
+        </div>
+        <div>
+          <div class="stat-number">4 → 100+</div>
+          <div class="stat-label">Enterprise clients,<br>active users</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lessons">
+      <h3>What I learned</h3>
+      <div class="lesson">
+        <strong>Accuracy is a hygiene metric, not a product metric.</strong>
+        Once you cross a usable threshold, users don't care if you go from
+        91% to 94%. They care whether they can ship the output without
+        anxiety. The PM job in AI is to translate model quality into user
+        confidence.
+      </div>
+      <div class="lesson">
+        <strong>"I don't know" is a feature, not a failure.</strong>
+        Confidence cues that surfaced model uncertainty made users trust the
+        product more, not less — because they could allocate attention
+        instead of double-checking everything.
+      </div>
+      <div class="lesson">
+        <strong>The hardest part wasn't building it — it was defending the
+        scope.</strong> Choosing trust UX over model gains was unpopular for
+        a quarter. The data eventually proved it out, but I learned to
+        invest more upfront in bringing engineering along on the why.
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY 2: DEPLOY CONSOLE -->
+  <section id="case-2" class="case-study">
+    <div class="case-meta">
+      <span>Case Study 02</span>
+      <span class="case-meta-divider"></span>
+      <span>Vantedge AI · Internal Tool</span>
+      <span class="case-meta-divider"></span>
+      <span>2025</span>
+    </div>
+
+    <h2 class="case-title">A problem no one asked me to solve.</h2>
+    <p class="case-subtitle">
+      How a quiet observation about engineering workflow became an internal
+      product the entire team now relies on — and what it taught me about
+      action bias.
+    </p>
+
+    <div class="case-section">
+      <div class="case-section-label">The observation</div>
+      <p>
+        I wasn't supposed to be working on internal tooling. My remit was the
+        customer-facing product. But sitting in engineering standups for a few
+        weeks, I kept noticing the same friction: every time someone needed to
+        push to dev or staging, they'd context-switch into GitHub, navigate to
+        Actions, find the right workflow, fill in parameters, and wait.
+      </p>
+      <p>
+        It wasn't a crisis. No one was complaining. But the time tax was real
+        — and more importantly, it broke flow. Engineers would lose 5–10
+        minutes per deploy, do it 4–6 times a day, and the cumulative effect
+        was that <strong>shipping felt heavier than it should.</strong>
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Why I decided to act</div>
+      <p>
+        Two reasons I didn't wait for someone to formally ask:
+      </p>
+      <div class="framework">
+        <ul>
+          <li><strong>The cost of inaction was invisible.</strong> No one was going to file a ticket for "deploys feel slow." Friction this low-grade gets normalized. If I waited for it to become a stated problem, it wouldn't become one.</li>
+          <li><strong>The blast radius was contained.</strong> An internal tool I scoped wrong wouldn't hurt customers. It was the safest possible context to test a hypothesis without permission.</li>
+        </ul>
+      </div>
+      <p>
+        I gave myself a one-week timebox: talk to engineers, scope the smallest
+        useful version, and have something working. If it didn't earn adoption
+        in a month, I'd kill it.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I scoped it</div>
+      <p>
+        I sat down with 8 engineers individually — not to gather requirements
+        but to <em>observe their actual deployment workflow</em>. I asked each
+        of them to walk me through their last three deploys. What I heard
+        wasn't what I expected.
+      </p>
+      <div class="quote">
+        "Honestly the GitHub UI is fine. The thing that kills me is forgetting
+        which branch I deployed last and having to dig through Slack to figure
+        it out."
+        <span class="quote-attr">— Senior engineer, paraphrased</span>
+      </div>
+      <p>
+        The real pain wasn't the deploy interface. It was the <strong>lack of
+        visibility into deploy state.</strong> Who deployed what to where, when,
+        and was it green? That reframed the product entirely. The console
+        wasn't a faster deploy button — it was a deploy status surface that
+        happened to have a deploy button.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">What I shipped</div>
+      <div class="framework">
+        <div class="framework-title">v1 scope (one week)</div>
+        <ol>
+          <li>One-click deploy to dev or staging from a single UI.</li>
+          <li>Live status board: what's deployed where, by whom, when, build state.</li>
+          <li>One-click rollback to the previous build.</li>
+        </ol>
+      </div>
+      <p>
+        I explicitly left out: production deploys (too risky for v1),
+        environment provisioning, and any kind of permissions system.
+        <strong>Cutting scope was the decision that made the project shippable
+        in a week.</strong>
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I measured adoption</div>
+      <p>
+        I didn't want vanity metrics. The only number that mattered was: <em>do
+        engineers reach for this instead of GitHub by default?</em> I
+        instrumented two things: deploys triggered through the console vs.
+        through GitHub directly, and time-from-merge to deployed.
+      </p>
+      <div class="stats">
+        <div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Engineering team<br>adoption in 3 weeks</div>
+        </div>
+        <div>
+          <div class="stat-number">~90s</div>
+          <div class="stat-label">Average deploy time,<br>down from ~6 min</div>
+        </div>
+        <div>
+          <div class="stat-number">All</div>
+          <div class="stat-label">Non-production deploys<br>now run through console</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lessons">
+      <h3>What I learned</h3>
+      <div class="lesson">
+        <strong>Low-grade friction is the highest-leverage thing to fix.</strong>
+        No one will file a ticket for it. The PMs who notice it and act anyway
+        end up shipping the tools their teams won't stop using.
+      </div>
+      <div class="lesson">
+        <strong>The right problem is rarely the stated one.</strong> Engineers
+        thought they wanted a faster deploy UI. What they actually needed was
+        deploy visibility. The user interview is where I caught it; without
+        that step I'd have shipped the wrong product.
+      </div>
+      <div class="lesson">
+        <strong>Permissionless action has limits — but they're further out
+        than you think.</strong> I didn't ask before starting. I did make sure
+        I had a kill-criterion (one month, no adoption, shut it down). That
+        balance is something I still tune.
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY 3: SCHOLAR PLANET -->
+  <section id="case-3" class="case-study">
+    <div class="case-meta">
+      <span>Case Study 03</span>
+      <span class="case-meta-divider"></span>
+      <span>Scholar Planet · EdTech</span>
+      <span class="case-meta-divider"></span>
+      <span>2023 — 2024</span>
+    </div>
+
+    <h2 class="case-title">A multi-sided product, three growth channels, and an AI content system.</h2>
+    <p class="case-subtitle">
+      The full cold-start story: launching with no users, building both
+      sides of a marketplace (students + teachers), running three different
+      acquisition motions in parallel, and designing a content supply system
+      that evolved from human-only to AI-augmented with a maker-checker
+      quality gate.
+    </p>
+
+    <div class="case-section">
+      <div class="case-section-label">The starting position</div>
+      <p>
+        When I joined Scholar Planet, the platform had a product but
+        essentially no users — the team was preparing to relaunch the app
+        and needed someone to own product end-to-end before, during, and
+        after that relaunch. There was no behavioral data to mine, no
+        existing user base to interview, and no obvious next feature.
+        <strong>The job was to build the engine that would create both at
+        the same time.</strong>
+      </p>
+      <p>
+        Cold-start problems are uncomfortable because every PM instinct
+        breaks. You can't A/B test what you don't have traffic for. You
+        can't validate retention hypotheses without retained users. You
+        can't prioritize a roadmap with no user feedback. The discipline
+        becomes <em>sequencing</em>: knowing which problem to solve first
+        so the next one becomes solvable.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I sequenced the work</div>
+      <p>
+        I didn't try to figure out retention features on day one. With no
+        users, that conversation has no signal. Instead, I worked the
+        problem in the order that the data would allow:
+      </p>
+      <div class="framework">
+        <div class="framework-title">The sequencing logic</div>
+        <ol>
+          <li><strong>Get the relaunch right.</strong> Revamp the app so the next user who landed on it had a chance of staying. Onboarding, core flows, and UI — fundamentals first.</li>
+          <li><strong>Open three acquisition channels in parallel.</strong> School partnerships (B2B2C), tuition centers (SMB), and individual students via marketing campaigns. Each needed a different motion, but together they gave us learning velocity.</li>
+          <li><strong>Mine the early data, then talk to the users behind it.</strong> Once we had real students and teachers on the platform, I ran user interviews against actual behavior patterns — not guesses.</li>
+          <li><strong>Build the supply side.</strong> Designed a teacher product so teachers could add their own students and assign content — turning teachers into content creators and student-acquisition channels in one move.</li>
+          <li><strong>Build retention loops.</strong> Streaks, leaderboards, and school/tuition dashboards specifically designed to extend the moments where students felt seen and teachers felt in control.</li>
+          <li><strong>Scale content supply.</strong> Started with content from real teachers; later layered AI generation with a maker-checker review pattern to scale without losing quality.</li>
+        </ol>
+      </div>
+      <p>
+        Each step unlocked the next. Without the relaunch, partnerships
+        wouldn't have stuck. Without diverse acquisition, we'd have learned
+        only one user pattern. Without the teacher product, we couldn't
+        have scaled content. Without quality gates, AI would have broken
+        what we built.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Three acquisition channels, three different motions</div>
+      <p>
+        Running three channels in parallel was a deliberate choice. Each
+        one tested a different hypothesis about who Scholar Planet was
+        actually for, and each one taught us something different about the
+        product.
+      </p>
+      <div class="framework">
+        <div class="framework-title">The three channels</div>
+        <ul>
+          <li><strong>Schools (B2B2C).</strong> Co-led GTM with the CEO; onboarded 50 Kendriya Vidyalayas through institutional partnerships. Slowest motion but highest LTV — once a school was in, hundreds of students came with it.</li>
+          <li><strong>Tuition centers (SMB).</strong> Targeted independent coaching institutes that wanted to give their students structured digital practice. Faster to close than schools, and the teachers were more engaged with the product day-to-day.</li>
+          <li><strong>Individual students (B2C).</strong> Launched marketing campaigns targeting students directly — especially those preparing for JEE and NEET. Different acquisition cost, different retention curve, but critical for learning what self-motivated users actually wanted.</li>
+        </ul>
+      </div>
+      <p>
+        The insight that came from running them together: <strong>each
+        channel surfaced a different user need.</strong> Schools cared
+        about reporting and oversight. Tuitions cared about assignment
+        flexibility. Individual students cared about content depth and
+        exam-specific prep. We couldn't have learned all three by going
+        deep on just one.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Building the supply side: a teacher product</div>
+      <p>
+        About six months in, a clear gap emerged from interviews: teachers
+        at schools and tuitions wanted to do more than monitor — they
+        wanted to <em>create</em>. Assign their own questions. Run their
+        own quizzes. Track their own students' progress. Without a teacher
+        product, we were treating them as passive supervisors of someone
+        else's content.
+      </p>
+      <div class="quote">
+        "I have my own question bank from years of teaching. If I could
+        give that to my students through this app instead of paper, I
+        would push every student to download it tomorrow."
+        <span class="quote-attr">— Tuition center teacher, paraphrased</span>
+      </div>
+      <p>
+        I scoped and shipped a teacher product where school and tuition
+        teachers could add their students, create custom assignments, and
+        track per-student progress. This turned out to be the highest-leverage
+        feature in the whole case study — because it solved two problems at
+        once:
+      </p>
+      <div class="framework">
+        <ul>
+          <li><strong>Supply.</strong> Teachers became content creators. Every assignment a teacher made was effectively new content on the platform, indexed to a real classroom that would use it.</li>
+          <li><strong>Acquisition.</strong> Every teacher who joined brought their students with them. Teachers became a B2B2C acquisition channel inside the SMB and institutional motions.</li>
+        </ul>
+      </div>
+      <p>
+        I also pushed for exam-specific content tracks — <strong>JEE and
+        NEET preparation modules</strong> — because the individual-student
+        channel was clearly biased toward exam prep. Adding structured
+        JEE/NEET content gave that segment a reason to stay past the first
+        week.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Scaling content: from human-only to AI with a quality gate</div>
+      <p>
+        The teacher-created content model worked, but it didn't scale
+        evenly. A few highly-engaged teachers produced 80% of the content;
+        most teachers wanted to use the platform without creating from
+        scratch. We needed more content, faster, but the educational stakes
+        were too high to just ship raw AI output — wrong answers on JEE/NEET
+        prep would directly hurt students.
+      </p>
+      <p>
+        I designed a <strong>maker-checker workflow</strong> for AI-generated
+        content: the model proposed, a human approved. Specifically:
+      </p>
+      <div class="framework">
+        <div class="framework-title">The maker-checker pipeline</div>
+        <ol>
+          <li><strong>Maker (AI).</strong> Generated practice questions, explanations, and answer keys against curriculum tags (subject, topic, difficulty, exam type).</li>
+          <li><strong>Checker (human teachers).</strong> Subject-matter teachers reviewed AI output in a dedicated review interface — approve, edit, or reject. Nothing reached students without a human "approve" stamp.</li>
+          <li><strong>Feedback loop.</strong> Rejected and edited items fed back as signal for which content categories the AI was unreliable on, so we could either improve prompts or restrict generation in those areas.</li>
+        </ol>
+      </div>
+      <p>
+        The decision I had to defend was speed vs. trust. The team wanted
+        the throughput AI offered, but I argued <strong>shipping a single
+        wrong answer to a JEE aspirant would do more damage than a month
+        of slower content production.</strong> The maker-checker pattern
+        was the compromise: AI for speed on the supply side, humans as the
+        non-negotiable quality gate before anything reached students.
+      </p>
+      <p>
+        This was my first hands-on experience designing an AI workflow with
+        responsible-AI patterns built in — and a direct ancestor of how I
+        now think about human-in-the-loop systems at Vantedge.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">How I measured if it worked</div>
+      <p>
+        North Star was DAU, but DAU is a lagging indicator on a cold-start
+        product. I tracked leading metrics weekly, segmented by acquisition
+        channel and user role:
+      </p>
+      <div class="framework">
+        <ul>
+          <li><strong>Streak retention rate</strong> — % of students whose streaks survived 7+ days. Direct read on whether the engagement loop was holding.</li>
+          <li><strong>Day-7 retention by channel</strong> — separated by school / tuition / individual to see which channels brought stickier users.</li>
+          <li><strong>Teacher activation rate</strong> — % of onboarded teachers who created at least one assignment in their first two weeks. Proxy for whether the supply side was healthy.</li>
+          <li><strong>AI content acceptance rate</strong> — % of AI-generated items approved by human checkers. Quality signal for the maker-checker system.</li>
+        </ul>
+      </div>
+      <p>
+        I built real-time analytics dashboards to automate weekly reporting
+        — saving the team roughly 8 hours/week and giving us faster signal
+        on which channel, which user role, and which content type was
+        responding to each release.
+      </p>
+    </div>
+
+    <div class="case-section">
+      <div class="case-section-label">Outcomes</div>
+      <div class="stats">
+        <div>
+          <div class="stat-number">2.5×</div>
+          <div class="stat-label">DAU growth<br>post-relaunch</div>
+        </div>
+        <div>
+          <div class="stat-number">72%</div>
+          <div class="stat-label">Retention rate<br>after habit loops</div>
+        </div>
+        <div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Schools onboarded<br>(plus tuitions, individuals)</div>
+        </div>
+      </div>
+      <p>
+        Three channels feeding the funnel, a teacher product turning supply
+        into acquisition, and an AI-augmented content system with humans as
+        the quality gate. The three threads together were the flywheel —
+        none of them alone would have moved the numbers.
+      </p>
+    </div>
+
+    <div class="lessons">
+      <h3>What I learned</h3>
+      <div class="lesson">
+        <strong>Sequence beats strategy on cold-start products.</strong>
+        Knowing what to do <em>first</em> mattered more than knowing what
+        to build. The order — relaunch, multi-channel acquisition, data,
+        teacher product, retention loops, AI content — was the actual
+        product decision. Reverse any two steps and the system would have
+        stalled.
+      </div>
+      <div class="lesson">
+        <strong>Multi-sided products grow through the side you can't
+        see.</strong> Students were the visible user, but the teacher product
+        was what made student acquisition scale. The buyer-facing or
+        creator-facing view of a B2B2C product is almost always the most
+        underrated growth surface.
+      </div>
+      <div class="lesson">
+        <strong>Speed and trust are not the same tradeoff in every
+        product.</strong> Shipping fast on a UI tweak is low-risk; shipping
+        fast on educational content that JEE aspirants will rely on is
+        high-risk. The maker-checker pattern wasn't conservative — it was
+        the right calibration for the stakes. That distinction is what
+        responsible AI means in practice, not as a slogan.
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE WORK -->
+  <section class="more-work">
+    <div class="section-label">Also</div>
+    <h2>Smaller bets and side projects.</h2>
+
+    <div class="more-item">
+      <div class="more-header">
+        <div class="more-name">AI Regression Testing Agent</div>
+        <div class="more-meta">Vantedge · Internal</div>
+      </div>
+      <p class="more-desc">
+        An autonomous browser agent that runs nightly regression tests across
+        critical user flows and emails a morning report. Shifted QA from
+        reactive (post-customer-report) to proactive (pre-customer impact).
+        Designed the agent's task schema so the LLM converts human-readable
+        test cases into reliable browser actions without rigid selectors.
+      </p>
+    </div>
+
+    <div class="more-item">
+      <div class="more-header">
+        <div class="more-name">Model Evaluation Framework</div>
+        <div class="more-meta">Vantedge · Core Infrastructure</div>
+      </div>
+      <p class="more-desc">
+        Built the rubric-based eval framework that gated every model release
+        at Vantedge — golden test sets, grounded-output checks, and scoring
+        across accuracy, faithfulness, and tone. The framework caught
+        regressions pre-launch and let us iterate prompts with confidence.
+      </p>
+    </div>
+
+    <div class="more-item">
+      <div class="more-header">
+        <div class="more-name">Human-in-the-Loop Feedback System</div>
+        <div class="more-meta">Vantedge · AI Workflow</div>
+      </div>
+      <p class="more-desc">
+        Designed thumbs/edits, error tagging, and reviewer dashboards that
+        turn production usage into a labeled dataset. The feedback loop
+        became the engine that powered ongoing prompt improvements without
+        starting every iteration from scratch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="section-label">About me</div>
+    <h2>What got me here.</h2>
+    <p>
+      I studied Computer Science at <strong>VIT Vellore</strong> with a
+      specialization in Blockchain. The engineering background is why I can
+      have honest conversations with ML engineers about latency, eval
+      methodology, and cost tradeoffs — not just abstract product
+      requirements.
+    </p>
+    <p>
+      I started in PM during my third year of college, freelancing for
+      Scholar Planet because I wanted to learn the craft before I had a job
+      title. That instinct — <strong>get close to real users and real
+      products before optimizing for credentials</strong> — has shaped
+      everything since.
+    </p>
+    <p>
+      What I care about: AI products that earn user trust through grounded
+      outputs and honest uncertainty. Internal tools that make engineering
+      teams faster. And the small UX details — confidence cues, edit
+      affordances, "I don't know" gracefully shown — that decide whether
+      people actually use what we ship.
+    </p>
+    <p>
+      What I'm looking for: a team building AI products at the frontier,
+      where the PM job is genuinely hard because the model behavior is
+      genuinely new. Somewhere I can keep learning by shipping.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact">
+    <div class="contact-prompt">Let's talk.</div>
+    <p class="contact-sub">
+      I'm open to AI Product Manager and Associate Product Manager roles at
+      teams shipping at the frontier.
+    </p>
+    <a href="mailto:susmitha.2003m@gmail.com" class="contact-email">susmitha.2003m@gmail.com</a>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/susmitha-mukkamala-b3314b204" target="_blank">LinkedIn</a>
+      <span>·</span>
+      <a href="tel:+919962291322">+91 99622 91322</a>
+      <span>·</span>
+      <span>Hyderabad, India</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    Designed & written by Susmitha Mukkamala · 2026
+  </div>
+
+</div>
+
+</body>
+</html>
