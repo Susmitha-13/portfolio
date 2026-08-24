@@ -127,43 +127,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE 7 QUESTIONS — quiet manifesto */}
-      <section className="mt-24 md:mt-28">
-        <Reveal>
-          <div className="rounded-3xl border-2 border-espresso bg-espresso text-cream p-6 md:p-10 shadow-chunklg">
-            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-mustard mb-3">
-              what this portfolio should answer
-            </div>
-            <h3 className="font-serif text-3xl md:text-4xl text-cream leading-tight max-w-3xl">
-              seven questions a hiring manager wants a yes on.
-            </h3>
-            <ul className="mt-6 grid md:grid-cols-2 gap-x-8 gap-y-3 text-cream/85">
-              {[
-                "Can she discover problems?",
-                "Can she talk to customers?",
-                "Can she turn ambiguity into requirements?",
-                "Can she work with engineers?",
-                "Does she understand technology deeply enough?",
-                "Can she ship?",
-                "Does she think beyond what she's told to do?",
-              ].map((q, i) => (
-                <li key={i} className="flex gap-3 items-start">
-                  <div className="font-mono text-mustard text-sm shrink-0 pt-1 tabular-nums">
-                    0{i + 1}
-                  </div>
-                  <div className="leading-relaxed">{q}</div>
-                </li>
-              ))}
-            </ul>
-            <div className="mt-6 font-mono text-xs text-cream/60">
-              the last one is the load-bearing one.
-            </div>
-          </div>
-        </Reveal>
-      </section>
-
       {/* INSIDE MY WORK — link block */}
-      <section className="mt-16">
+      <section className="mt-24 md:mt-28">
         <Reveal>
           <Link
             href="/inside"
