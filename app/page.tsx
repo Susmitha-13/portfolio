@@ -1,54 +1,63 @@
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { TiltCard } from "@/components/TiltCard";
+import { HeroTicker } from "@/components/HeroTicker";
 import { cases } from "@/lib/cases";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-6xl px-6 pb-24">
       {/* HERO */}
-      <section className="pt-10 md:pt-16">
-        <Reveal>
-          <div className="chip mb-6">
-            <span className="mr-2 h-1.5 w-1.5 rounded-full bg-terra animate-pulseSoft" />
-            open to APM · associate ai pm · ai product roles
-          </div>
-        </Reveal>
+      <section className="pt-10 md:pt-16 grid md:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)] gap-8 md:gap-12 items-start">
+        <div>
+          <Reveal>
+            <div className="chip mb-6">
+              <span className="mr-2 h-1.5 w-1.5 rounded-full bg-terra animate-pulseSoft" />
+              open to APM · associate ai pm · ai product roles
+            </div>
+          </Reveal>
 
-        <Reveal delay={0.05}>
-          <h1 className="font-serif text-[3.4rem] md:text-[6rem] leading-[0.95] text-espresso max-w-5xl">
-            susmitha<span className="text-terra">.</span>
-          </h1>
-        </Reveal>
+          <Reveal delay={0.05}>
+            <h1 className="font-serif text-[3.4rem] md:text-[5.6rem] leading-[0.95] text-espresso">
+              susmitha<span className="text-terra">.</span>
+            </h1>
+          </Reveal>
 
-        <Reveal delay={0.12}>
-          <p className="mt-5 max-w-3xl text-espresso/85 text-xl md:text-2xl leading-snug font-serif">
-            Product Manager building at the intersection of{" "}
-            <span className="hl-terra">AI</span>,{" "}
-            <span className="hl-sage">financial workflows</span>, and{" "}
-            <span className="hl">complex products</span>.
-          </p>
-        </Reveal>
+          <Reveal delay={0.12}>
+            <p className="mt-5 max-w-2xl text-espresso/85 text-xl md:text-2xl leading-snug font-serif">
+              Product Manager building at the intersection of{" "}
+              <span className="hl-terra">AI</span>,{" "}
+              <span className="hl-sage">financial workflows</span>, and{" "}
+              <span className="hl">complex products</span>.
+            </p>
+          </Reveal>
 
-        <Reveal delay={0.2}>
-          <p className="mt-5 max-w-2xl text-espresso/70 leading-relaxed">
-            I don&apos;t start with PRDs — I start with the user. Six case
-            studies below, each with the problem, the discovery, the
-            architecture, the artifacts, what didn&apos;t work, and the
-            metric that landed. Redacted where I have to. Direct otherwise.
-          </p>
-        </Reveal>
+          <Reveal delay={0.2}>
+            <p className="mt-5 max-w-xl text-espresso/70 leading-relaxed">
+              I don&apos;t start with PRDs — I start with the user. Six
+              case studies below, each with the problem, the discovery,
+              the architecture, the artifacts, what didn&apos;t work, and
+              the metric that landed. Redacted where I have to. Direct
+              otherwise.
+            </p>
+          </Reveal>
 
-        <Reveal delay={0.28}>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#selected-work" className="btn-chunk">
-              selected work <span>↓</span>
-            </a>
-            <Link href="/inside" className="btn-outline">
-              inside my work
-            </Link>
-          </div>
-        </Reveal>
+          <Reveal delay={0.28}>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <a href="#selected-work" className="btn-chunk">
+                selected work <span>↓</span>
+              </a>
+              <Link href="/inside" className="btn-outline">
+                inside my work
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Right column — The Ledger */}
+        <div className="w-full md:pt-2">
+          <HeroTicker />
+        </div>
       </section>
 
       {/* SELECTED WORK */}
