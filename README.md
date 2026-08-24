@@ -1,19 +1,35 @@
 # susmitha · portfolio
 
-A warm, pixel-art Next.js portfolio for **Susmitha Mukkamala** — AI Product Manager.
+A **PM workbench**, not a prettier resume — the public evidence layer behind
+what **Susmitha Mukkamala** actually does as a Product Manager building at
+the intersection of AI, financial workflows, and complex products.
 
-Live case studies for two 0→1 rides: **Vantedge AI (YC W22)** — fintech,
-enterprise fund-ops — and **Scholar Planet** — edtech, took a basic quiz app
-with under 100 users and rebuilt it into a two-sided platform.
+Every case study opens the same way: **the problem, the discovery, the
+framing, the architecture, the artifacts, what didn't work, the metrics,
+the product decisions, and the lesson.** Redacted where it has to be.
+Direct otherwise.
+
+## Selected work
+
+| Case                       | Proves                                                 |
+| -------------------------- | ------------------------------------------------------ |
+| **AI Copilot**             | Agentic systems + product architecture + financial workflows |
+| **Research Agent**         | AI evaluation + orchestration + accuracy / latency     |
+| **MCA Underwriting Agent** | Unstructured data extraction + domain reasoning        |
+| **AI CRM · Forward Deployment** | Customer-facing implementation + shipping         |
+| **FundOS**                 | Financial product depth                                |
+| **Scholar Planet**         | 0 → 1 PM + growth + customer discovery                 |
+
+Plus an **`/inside`** section: PRDs · AI Systems · Product Experiments ·
+Customer Discovery · Product Teardowns · Technical Notes.
 
 ## Stack
 
-- **Next.js 14** (App Router, static export-ready)
+- **Next.js 14** (App Router, static-friendly)
 - **TailwindCSS** for styling
-- **Framer Motion** for the mascot walk-out, tile tilts, KPI counters, and
-  per-project animations
-- **TypeScript** everywhere
-- Fonts: Instrument Serif · Inter · JetBrains Mono · Press Start 2P
+- **Framer Motion** for scroll reveals, KPI counters, tilt cards, artifact expand
+- **TypeScript** throughout
+- Fonts: Instrument Serif · Inter · JetBrains Mono · Press Start 2P (via `next/font`)
 
 ## Run locally
 
@@ -27,26 +43,42 @@ npm run dev
 
 ```
 app/
-  page.tsx               landing hub — pixel-mascot guide + tile grid
-  journey/               timeline of chapters, each with its own vignette
-  vantedge/              fintech case study — problem → friction → decisions → impl → learned
-  scholar-planet/        edtech case study — same arc
-  projects/              projects & experiments, each with a unique animation
-  contact/               warm contact card
+  page.tsx                     landing — hero + Selected Work + the 7 questions
+  work/[case]/page.tsx         six case studies, each with the 8-section arc
+  inside/page.tsx              evidence library (PRDs / AI systems / experiments / …)
+  journey/page.tsx             short personal timeline
+  contact/page.tsx             email · linkedin · phone
+
 components/
-  Mascot.tsx             pixel-art mascot
-  GuideMascot.tsx        landing "hops out of the box" sequence + speech bubble
-  KpiCounter.tsx         scroll-in counter animation
-  TiltCard.tsx           3D mouse-tilt with light glare
-  ...
+  case/                        the reusable case-study primitives
+    CaseStudyHeader.tsx        kicker + title + intro + headline metrics
+    Section.tsx                numbered section (01 · problem, 02 · discovery, …)
+    DiscoveryList.tsx          channel + finding cards
+    Framing.tsx                User → Job → Pain → Constraints → Success
+    ArchDiagram.tsx            pixel-flow architecture diagram (rows + fanouts)
+    ArtifactCard.tsx           expandable artifact — PRDs, prompts, eval, tickets
+    Evolution.tsx              v1 → v2 → v3 story with insight + change per step
+    MetricGrid.tsx             visual metric cards (KPIs, headline outcomes)
+    Decisions.tsx              "why X not Y" cards — the CEO-mindset section
+    CrossLink.tsx              read-next between cases
+
+  Nav.tsx · Footer.tsx · Reveal.tsx · TiltCard.tsx · KpiCounter.tsx
+
 lib/
-  data.ts                copy + KPI structures
+  cases.ts                     the roster + next-case rotation
 ```
 
 ## Deploy
 
-Any Next.js host works — Vercel is the natural fit. `npm run build` is clean.
+Vercel — `vercel.json` pins the framework preset so the build runs
+`next build` and produces the `.next` output directory.
 
----
+## The 7 questions this portfolio should answer
 
-Built with love, coffee, and one small pixel guide.
+1. Can she discover problems?
+2. Can she talk to customers?
+3. Can she turn ambiguity into requirements?
+4. Can she work with engineers?
+5. Does she understand technology deeply enough?
+6. Can she ship?
+7. Does she think beyond what she's told to do? ← the load-bearing one.

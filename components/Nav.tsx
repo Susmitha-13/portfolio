@@ -6,10 +6,9 @@ import clsx from "clsx";
 
 const links = [
   { href: "/", label: "home" },
+  { href: "/#selected-work", match: "work", label: "work" },
+  { href: "/inside", label: "inside" },
   { href: "/journey", label: "journey" },
-  { href: "/vantedge", label: "fintech" },
-  { href: "/scholar-planet", label: "edtech" },
-  { href: "/projects", label: "projects" },
   { href: "/contact", label: "contact" },
 ];
 
@@ -31,10 +30,14 @@ export function Nav() {
         <nav className="hidden md:flex items-center gap-1">
           {links.map((l) => {
             const active =
-              l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+              l.href === "/"
+                ? pathname === "/"
+                : l.match
+                ? pathname.startsWith(`/${l.match}`)
+                : pathname.startsWith(l.href);
             return (
               <Link
-                key={l.href}
+                key={l.label}
                 href={l.href}
                 className={clsx(
                   "px-3 py-1.5 text-sm font-mono tracking-wide transition-all",
@@ -52,10 +55,12 @@ export function Nav() {
         {/* mobile */}
         <nav className="md:hidden flex items-center gap-2 text-xs font-mono">
           {links.slice(1).map((l) => {
-            const active = pathname.startsWith(l.href);
+            const active = l.match
+              ? pathname.startsWith(`/${l.match}`)
+              : pathname.startsWith(l.href);
             return (
               <Link
-                key={l.href}
+                key={l.label}
                 href={l.href}
                 className={clsx(
                   "px-2 py-1 rounded",
