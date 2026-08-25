@@ -11,9 +11,15 @@ export default function Home() {
       <section className="pt-10 md:pt-16 grid md:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)] gap-8 md:gap-12 items-start">
         <div>
           <Reveal>
-            <div className="chip mb-6">
-              <span className="mr-2 h-1.5 w-1.5 rounded-full bg-terra animate-pulseSoft" />
-              open to APM · associate ai pm · ai product roles
+            <div className="flex flex-wrap gap-2 mb-6">
+              <div className="chip">
+                <span className="mr-2 h-1.5 w-1.5 rounded-full bg-terra animate-pulseSoft" />
+                open to · APM · associate ai pm · ai product manager
+              </div>
+              <div className="chip">
+                <span className="mr-2 h-1.5 w-1.5 rounded-full bg-sage animate-pulseSoft" />
+                also · ai engineer · genai engineer
+              </div>
             </div>
           </Reveal>
 
@@ -25,20 +31,21 @@ export default function Home() {
 
           <Reveal delay={0.12}>
             <p className="mt-5 max-w-2xl text-espresso/85 text-xl md:text-2xl leading-snug font-serif">
-              Product Manager building at the intersection of{" "}
-              <span className="hl-terra">AI</span>,{" "}
-              <span className="hl-sage">financial workflows</span>, and{" "}
+              <span className="hl-terra">Product Manager</span> ×{" "}
+              <span className="hl-sage">AI Engineer</span> building at
+              the intersection of AI, financial workflows, and{" "}
               <span className="hl">complex products</span>.
             </p>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-xl text-espresso/70 leading-relaxed">
-              I don&apos;t start with PRDs — I start with the user. Six
-              case studies below, each with the problem, the discovery,
-              the architecture, the artifacts, what didn&apos;t work, and
-              the metric that landed. Redacted where I have to. Direct
-              otherwise.
+              I don&apos;t start with PRDs — I start with the user. Then
+              I write the prompts, wire the agents, and own the evals.
+              Six case studies below, each with the problem, the
+              discovery, the architecture, the artifacts, what
+              didn&apos;t work, and the metric that landed. Redacted
+              where I have to. Direct otherwise.
             </p>
           </Reveal>
 

@@ -110,7 +110,9 @@ export default function JourneyPage() {
                 "APM",
                 "Associate AI PM",
                 "AI Product Manager",
-                "Forward-Deployed PM",
+                "AI Engineer",
+                "GenAI Engineer",
+                "Forward-Deployed",
                 "0→1",
               ].map((t) => (
                 <span key={t} className="chip">

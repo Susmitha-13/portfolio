@@ -90,7 +90,9 @@ export default function ContactPage() {
               <span className="chip">APM</span>
               <span className="chip">Associate AI PM</span>
               <span className="chip">AI Product Manager</span>
-              <span className="chip">Forward-Deployed PM</span>
+              <span className="chip">AI Engineer</span>
+              <span className="chip">GenAI Engineer</span>
+              <span className="chip">Forward-Deployed</span>
               <span className="chip">0 → 1</span>
             </div>
           </div>
@@ -105,11 +107,12 @@ export default function ContactPage() {
             </h3>
             <ul className="mt-3 space-y-2 text-espresso/80">
               <li>
-                · you&apos;re hiring for an <b>APM</b> or{" "}
-                <b>Associate AI PM</b>
+                · you&apos;re hiring for an <b>APM</b>, <b>Associate AI
+                PM</b>, <b>AI Engineer</b>, or <b>GenAI Engineer</b>
               </li>
               <li>
-                · you need a PM who can co-author PRDs with AI guardrails
+                · you need someone who can write the prompt <em>and</em>{" "}
+                the PRD, wire the agents <em>and</em> talk to the user
               </li>
               <li>
                 · you love a North Star, a KPI tree, and a good cohort
